@@ -71,6 +71,9 @@
 		22CD424B26399BA1007C35FA /* SPDomain */ = {
 			isa = PBXGroup;
 			children = (
+				22CD426726399DB0007C35FA /* Interfaces */,
+				22CD426626399DA9007C35FA /* Usecases */,
+				22CD426526399D93007C35FA /* Entities */,
 				22CD424C26399BA1007C35FA /* SPDomain.h */,
 				22CD424D26399BA1007C35FA /* Info.plist */,
 			);
@@ -84,6 +87,35 @@
 				22CD425926399BA1007C35FA /* Info.plist */,
 			);
 			path = SPDomainTests;
+			sourceTree = "<group>";
+		};
+		22CD426526399D93007C35FA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		22CD426626399DA9007C35FA /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		22CD426726399DB0007C35FA /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				22CD426826399DB7007C35FA /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		22CD426826399DB7007C35FA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
