@@ -10,4 +10,11 @@
    <FileRef
       location = "group:SPCore/SPCore.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "FeatureModules">
+      <FileRef
+         location = "group:SPHomeModule/SPHomeModule.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
