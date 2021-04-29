@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		22CD422026399161007C35FA /* ShoppiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD421F26399161007C35FA /* ShoppiAppUITests.swift */; };
 		22CD423226399175007C35FA /* SPCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CD423126399175007C35FA /* SPCore.framework */; };
 		22CD423326399175007C35FA /* SPCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22CD423126399175007C35FA /* SPCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CD2EBF4AC72BE7345FDF604 /* Pods_ShoppiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E878B975AB07863BCDA5078 /* Pods_ShoppiApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		042343B06598165246AB5D73 /* Pods-ShoppiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppiApp.release.xcconfig"; path = "Target Support Files/Pods-ShoppiApp/Pods-ShoppiApp.release.xcconfig"; sourceTree = "<group>"; };
 		22CD41FA26399160007C35FA /* ShoppiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CD41FD26399160007C35FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22CD41FF26399160007C35FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 		22CD421F26399161007C35FA /* ShoppiAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppiAppUITests.swift; sourceTree = "<group>"; };
 		22CD422126399161007C35FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CD423126399175007C35FA /* SPCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SPCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E878B975AB07863BCDA5078 /* Pods_ShoppiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD819E4A2001A2F0F3FFCCB /* Pods-ShoppiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShoppiApp.debug.xcconfig"; path = "Target Support Files/Pods-ShoppiApp/Pods-ShoppiApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CD423226399175007C35FA /* SPCore.framework in Frameworks */,
+				4CD2EBF4AC72BE7345FDF604 /* Pods_ShoppiApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,7 @@
 				22CD421E26399161007C35FA /* ShoppiAppUITests */,
 				22CD41FB26399160007C35FA /* Products */,
 				22CD423026399175007C35FA /* Frameworks */,
+				85958DFA0134126DE8235D1D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,8 +157,19 @@
 			isa = PBXGroup;
 			children = (
 				22CD423126399175007C35FA /* SPCore.framework */,
+				2E878B975AB07863BCDA5078 /* Pods_ShoppiApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85958DFA0134126DE8235D1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CD819E4A2001A2F0F3FFCCB /* Pods-ShoppiApp.debug.xcconfig */,
+				042343B06598165246AB5D73 /* Pods-ShoppiApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22CD422426399161007C35FA /* Build configuration list for PBXNativeTarget "ShoppiApp" */;
 			buildPhases = (
+				B4DF286B81F071691E4C9A83 /* [CP] Check Pods Manifest.lock */,
 				22CD41F626399160007C35FA /* Sources */,
 				22CD41F726399160007C35FA /* Frameworks */,
 				22CD41F826399160007C35FA /* Resources */,
@@ -280,6 +298,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4DF286B81F071691E4C9A83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShoppiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		22CD41F626399160007C35FA /* Sources */ = {
@@ -461,6 +504,7 @@
 		};
 		22CD422526399161007C35FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD819E4A2001A2F0F3FFCCB /* Pods-ShoppiApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -480,6 +524,7 @@
 		};
 		22CD422626399161007C35FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042343B06598165246AB5D73 /* Pods-ShoppiApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
