@@ -13,7 +13,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    - name: Go to the App Directory
+      run: cd ShoppiApp
+    - name: Install bundle
+      run: |
+        bundle config path vendor/bundle
+        bundle insall --jobs 4 --retry 3
+    - name: Create Firebase Service Credentials file
+      run: |
+        cd ShoppiApp/FirebaseAppDistributionConfig
+        echo "$FIREBASE_CREDENTIALS" > firebase_creadenfials.json.b64
+        base64 -d -i firebase_creadenfials.json.b64 > firebase_credentials.json
+      env:
+        FIREBASE_CREDENTIALS: ${{ secretes.FIREBASE_CREDENTIALS }}
+    - name: Distribute app with 🔥 App Distribution 🚀
+      run: bundle exec fastlane distribute
+      env:
+        FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
