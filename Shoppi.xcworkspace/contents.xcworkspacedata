@@ -5,6 +5,9 @@
       location = "group:ShoppiApp/ShoppiApp.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:SPData/SPData.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SPDomain/SPDomain.xcodeproj">
    </FileRef>
    <FileRef
