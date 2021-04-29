@@ -18,7 +18,7 @@ jobs:
     - name: Install bundle
       run: |
         bundle config path vendor/bundle
-        bundle insall --jobs 4 --retry 3
+        bundle install --jobs 4 --retry 3
     - name: Create Firebase Service Credentials file
       run: |
         cd ShoppiApp/FirebaseAppDistributionConfig
