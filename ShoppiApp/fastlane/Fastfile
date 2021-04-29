@@ -16,7 +16,7 @@
 default_platform(:ios)
 
 platform :ios do
-  lane :staging_adhoc do
+  lane :ios_distribute do
     # increment_build_number(xcodeproj: "ShoppiApp.xcodeproj")
     build_app(workspace: "../Shoppi.xcworkspace", scheme: "ShoppiApp", export_method: "development", silent: "true", output_directory: "./build_ipa")
     firebase_app_distribution(
