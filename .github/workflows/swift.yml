@@ -28,6 +28,6 @@ jobs:
     - name: Distribute app with 🔥 App Distribution 🚀
       run: |
         cd ShoppiApp
-        bundle exec fastlane distribute
+        bundle exec fastlane ios_distribute
       env:
         FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
