@@ -10,6 +10,16 @@
 		2268F730263A908B003F170D /* SPInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2268F726263A908B003F170D /* SPInfrastructure.framework */; };
 		2268F735263A908B003F170D /* SPInfrastructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268F734263A908B003F170D /* SPInfrastructureTests.swift */; };
 		2268F737263A908B003F170D /* SPInfrastructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 2268F729263A908B003F170D /* SPInfrastructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22EDBB32263D973F00EA799B /* SPEndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB31263D973F00EA799B /* SPEndPointType.swift */; };
+		22EDBB35263D97DD00EA799B /* SPHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB34263D97DD00EA799B /* SPHTTPMethod.swift */; };
+		22EDBB37263D984B00EA799B /* SPHTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB36263D984B00EA799B /* SPHTTPTask.swift */; };
+		22EDBB3A263D99AE00EA799B /* SPParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB39263D99AE00EA799B /* SPParameterEncoder.swift */; };
+		22EDBB3C263D9A0500EA799B /* SPNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB3B263D9A0500EA799B /* SPNetworkError.swift */; };
+		22EDBB3E263D9A8800EA799B /* SPURLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB3D263D9A8800EA799B /* SPURLParameterEncoder.swift */; };
+		22EDBB40263D9DA400EA799B /* SPJSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB3F263D9DA400EA799B /* SPJSONParameterEncoder.swift */; };
+		22EDBB43263D9F4000EA799B /* SPNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB42263D9F4000EA799B /* SPNetworkRouter.swift */; };
+		22EDBB46263DA0A600EA799B /* SPRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB45263DA0A600EA799B /* SPRouter.swift */; };
+		22EDBB48263DA69400EA799B /* SPNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDBB47263DA69400EA799B /* SPNetworkable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,16 @@
 		2268F72F263A908B003F170D /* SPInfrastructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPInfrastructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2268F734263A908B003F170D /* SPInfrastructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPInfrastructureTests.swift; sourceTree = "<group>"; };
 		2268F736263A908B003F170D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EDBB31263D973F00EA799B /* SPEndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPEndPointType.swift; sourceTree = "<group>"; };
+		22EDBB34263D97DD00EA799B /* SPHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTTPMethod.swift; sourceTree = "<group>"; };
+		22EDBB36263D984B00EA799B /* SPHTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHTTPTask.swift; sourceTree = "<group>"; };
+		22EDBB39263D99AE00EA799B /* SPParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPParameterEncoder.swift; sourceTree = "<group>"; };
+		22EDBB3B263D9A0500EA799B /* SPNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNetworkError.swift; sourceTree = "<group>"; };
+		22EDBB3D263D9A8800EA799B /* SPURLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPURLParameterEncoder.swift; sourceTree = "<group>"; };
+		22EDBB3F263D9DA400EA799B /* SPJSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPJSONParameterEncoder.swift; sourceTree = "<group>"; };
+		22EDBB42263D9F4000EA799B /* SPNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNetworkRouter.swift; sourceTree = "<group>"; };
+		22EDBB45263DA0A600EA799B /* SPRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRouter.swift; sourceTree = "<group>"; };
+		22EDBB47263DA69400EA799B /* SPNetworkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNetworkable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +93,13 @@
 			children = (
 				2268F729263A908B003F170D /* SPInfrastructure.h */,
 				2268F72A263A908B003F170D /* Info.plist */,
+				22EDBB31263D973F00EA799B /* SPEndPointType.swift */,
+				22EDBB47263DA69400EA799B /* SPNetworkable.swift */,
+				22EDBB3B263D9A0500EA799B /* SPNetworkError.swift */,
+				22EDBB44263DA09400EA799B /* Router */,
+				22EDBB41263D9E9500EA799B /* NetworkRouter */,
+				22EDBB38263D997A00EA799B /* Parameters & Encoding */,
+				22EDBB33263D97C800EA799B /* HTTPProtocols */,
 			);
 			path = SPInfrastructure;
 			sourceTree = "<group>";
@@ -84,6 +111,41 @@
 				2268F736263A908B003F170D /* Info.plist */,
 			);
 			path = SPInfrastructureTests;
+			sourceTree = "<group>";
+		};
+		22EDBB33263D97C800EA799B /* HTTPProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				22EDBB34263D97DD00EA799B /* SPHTTPMethod.swift */,
+				22EDBB36263D984B00EA799B /* SPHTTPTask.swift */,
+			);
+			path = HTTPProtocols;
+			sourceTree = "<group>";
+		};
+		22EDBB38263D997A00EA799B /* Parameters & Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				22EDBB39263D99AE00EA799B /* SPParameterEncoder.swift */,
+				22EDBB3D263D9A8800EA799B /* SPURLParameterEncoder.swift */,
+				22EDBB3F263D9DA400EA799B /* SPJSONParameterEncoder.swift */,
+			);
+			path = "Parameters & Encoding";
+			sourceTree = "<group>";
+		};
+		22EDBB41263D9E9500EA799B /* NetworkRouter */ = {
+			isa = PBXGroup;
+			children = (
+				22EDBB42263D9F4000EA799B /* SPNetworkRouter.swift */,
+			);
+			path = NetworkRouter;
+			sourceTree = "<group>";
+		};
+		22EDBB44263DA09400EA799B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				22EDBB45263DA0A600EA799B /* SPRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +209,7 @@
 				TargetAttributes = {
 					2268F725263A908B003F170D = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
 					};
 					2268F72E263A908B003F170D = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +257,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EDBB32263D973F00EA799B /* SPEndPointType.swift in Sources */,
+				22EDBB3E263D9A8800EA799B /* SPURLParameterEncoder.swift in Sources */,
+				22EDBB37263D984B00EA799B /* SPHTTPTask.swift in Sources */,
+				22EDBB3C263D9A0500EA799B /* SPNetworkError.swift in Sources */,
+				22EDBB35263D97DD00EA799B /* SPHTTPMethod.swift in Sources */,
+				22EDBB40263D9DA400EA799B /* SPJSONParameterEncoder.swift in Sources */,
+				22EDBB46263DA0A600EA799B /* SPRouter.swift in Sources */,
+				22EDBB48263DA69400EA799B /* SPNetworkable.swift in Sources */,
+				22EDBB43263D9F4000EA799B /* SPNetworkRouter.swift in Sources */,
+				22EDBB3A263D99AE00EA799B /* SPParameterEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +414,7 @@
 		2268F73B263A908B003F170D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 27FY64RUCC;
@@ -357,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.sorawit.SPInfrastructure;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +440,7 @@
 		2268F73C263A908B003F170D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 27FY64RUCC;
@@ -389,6 +465,7 @@
 		2268F73E263A908B003F170D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27FY64RUCC;
 				INFOPLIST_FILE = SPInfrastructureTests/Info.plist;
@@ -407,6 +484,7 @@
 		2268F73F263A908B003F170D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27FY64RUCC;
 				INFOPLIST_FILE = SPInfrastructureTests/Info.plist;
