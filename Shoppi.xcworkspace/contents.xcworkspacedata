@@ -13,6 +13,9 @@
    <FileRef
       location = "group:SPCore/SPCore.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SPInfrastructure/SPInfrastructure.xcodeproj">
+   </FileRef>
    <Group
       location = "container:"
       name = "FeatureModules">
